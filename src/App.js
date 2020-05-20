@@ -4,7 +4,6 @@ import TodoList from "./ToDo/TodoList";
 import LoginForm from "./Auth/login";
 import 'toastr/build/toastr.min.css';
 import Signup from "./Auth/signup";
-import Header from "./Header/header";
 import Home from "./Home";
 import fire from "./config/fire";
 import {Redirect, Route, Switch} from "react-router";
