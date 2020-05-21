@@ -15,6 +15,7 @@ function PrivateRoute({Component,
                           componentProps = {},
                           ...rest
                       }) {
+
     return (
         <Route
             {...rest}
