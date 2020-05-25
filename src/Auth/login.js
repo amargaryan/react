@@ -6,6 +6,7 @@ import Label from 'reactstrap/lib/Label';
 import validator from 'email-validator';
 import toastr from 'toastr'
 import fire from "../config/fire";
+import firebase from "firebase";
 
 toastr.options = {
     "closeButton": true,
@@ -45,6 +46,7 @@ function useFormField(initialValue) {
 function LoginForm(loginProps) {
     const email = useFormField('');
     const password = useFormField('');
+    const [books, setBooks] = useState();
 
     function validateForm() {
         let isFormValid = true;

@@ -8,9 +8,11 @@ import Home from "./Home";
 import fire from "./config/fire";
 import {Redirect, Route, Switch} from "react-router";
 import UserContext from "./contexts/user";
+import firebase from "firebase";
 
 
-function PrivateRoute({Component,
+function PrivateRoute({
+                          Component,
                           user,
                           componentProps = {},
                           ...rest
@@ -20,10 +22,10 @@ function PrivateRoute({Component,
         <Route
             {...rest}
             render={props =>
-            !!user ? (
+                !!user ? (
                     <>
                         <div>{user.email}</div>
-                    <Component {...props} {...componentProps} />
+                        <Component {...props} {...componentProps} />
                     </>
                 ) : (
                     <Redirect
@@ -44,11 +46,13 @@ class App extends React.Component {
         this.state = ({
             user: null
         });
+
         this.authListener = this.authListener.bind(this);
     }
 
     componentDidMount() {
         this.authListener();
+
     }
 
     authListener() {

@@ -1,13 +1,13 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAzB-aCAPJ9kgIWzeBTZkA4KtqkspkG5Bc",
-    authDomain: "firs-react-project.firebaseapp.com",
-    databaseURL: "https://firs-react-project.firebaseio.com",
-    projectId: "firs-react-project",
-    storageBucket: "firs-react-project.appspot.com",
-    messagingSenderId: "732273334192",
-    appId: "1:732273334192:web:5f9b09cbaf14da59ac6875"
+    apiKey: "AIzaSyB1s3Ly1SsTgHvVU51URtv8L3toXpw_iw0",
+    authDomain: "react-firebase-db452.firebaseapp.com",
+    databaseURL: "https://react-firebase-db452.firebaseio.com",
+    projectId: "react-firebase-db452",
+    storageBucket: "react-firebase-db452.appspot.com",
+    messagingSenderId: "359741759049",
+    appId: "1:359741759049:web:8a54e69cdb905820aea998"
 };
 const fire = firebase.initializeApp(firebaseConfig);
 export default fire;
