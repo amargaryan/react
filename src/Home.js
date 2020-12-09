@@ -26,7 +26,7 @@ export default function Home(props) {
 
     function logout() {
         fire.auth().signOut();
-    }
+    }akdshfsd
 
     const user = useContext(UserContext);
 
