@@ -50,9 +50,9 @@ export default function Home(props) {
                             />
                             <button onClick={onCreate}>Add Book</button>
                             {books.map(book => (
-                                <li key={book.id}>
-                                    <BookInput book={book}/>
-                                </li>
+                                // <li key={book.id}>
+                                //     <BookInput book={book}/>
+                                // </li>
                             ))}
                         </ul>
                     </>
